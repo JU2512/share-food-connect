@@ -11,9 +11,12 @@ export interface DonationListing {
   scheduledTime: string;
   contactPhone: string;
   address: string;
+  latitude: number;
+  longitude: number;
   createdAt: string;
   status: 'available' | 'accepted' | 'completed';
   acceptedBy?: string;
+  distance?: number; // distance in km from receiver
 }
 
 export interface ReceiverProfile {

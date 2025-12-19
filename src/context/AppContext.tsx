@@ -17,7 +17,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-// Sample donation data
+// Sample donation data with coordinates (Bangalore area)
 const sampleDonations: DonationListing[] = [
   {
     id: '1',
@@ -27,7 +27,9 @@ const sampleDonations: DonationListing[] = [
     photo: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop',
     scheduledTime: 'Today, 6:00 PM',
     contactPhone: '+91 98765 43210',
-    address: '123 Green Street, Mumbai',
+    address: '123 Green Street, Koramangala, Bangalore',
+    latitude: 12.9352,
+    longitude: 77.6245,
     createdAt: new Date().toISOString(),
     status: 'available',
   },
@@ -39,7 +41,9 @@ const sampleDonations: DonationListing[] = [
     photo: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop',
     scheduledTime: 'Today, 8:00 PM',
     contactPhone: '+91 98765 43211',
-    address: '456 Main Road, Delhi',
+    address: '456 Main Road, Indiranagar, Bangalore',
+    latitude: 12.9784,
+    longitude: 77.6408,
     createdAt: new Date().toISOString(),
     status: 'available',
   },
@@ -51,7 +55,23 @@ const sampleDonations: DonationListing[] = [
     photo: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop',
     scheduledTime: 'Tomorrow, 10:00 AM',
     contactPhone: '+91 98765 43212',
-    address: '789 Baker Lane, Bangalore',
+    address: '789 Baker Lane, Whitefield, Bangalore',
+    latitude: 12.9698,
+    longitude: 77.7500,
+    createdAt: new Date().toISOString(),
+    status: 'available',
+  },
+  {
+    id: '4',
+    donorId: 'donor4',
+    foodName: 'Fruit Basket',
+    quantity: '20 kg',
+    photo: 'https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400&h=300&fit=crop',
+    scheduledTime: 'Today, 5:00 PM',
+    contactPhone: '+91 98765 43213',
+    address: '22 MG Road, Bangalore',
+    latitude: 12.9757,
+    longitude: 77.6069,
     createdAt: new Date().toISOString(),
     status: 'available',
   },
