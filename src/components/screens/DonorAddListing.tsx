@@ -49,6 +49,8 @@ const DonorAddListing: React.FC = () => {
       donorId: 'current-donor',
       ...formData,
       photo: photoPreview || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop',
+      latitude: 12.9716 + (Math.random() - 0.5) * 0.1, // Random location near Bangalore
+      longitude: 77.5946 + (Math.random() - 0.5) * 0.1,
       createdAt: new Date().toISOString(),
       status: 'available' as const,
     };
